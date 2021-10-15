@@ -1,0 +1,10 @@
+<h1>CyroApp</h1>
+<a [routerLink]="['/currency']">Cotações</a> | 
+<a [routerLink]="['/wallet']">Carteira</a> |
+<span *ngIf="wallet.diff>0" style="color:green">↑</span>
+<span *ngIf="wallet.diff<0" style="color:red">↓</span>
+<hr/>
+<router-outlet></router-outlet>
+<hr/>
+Cyro Fernandes - RA:0050831921005
+<a href="https://github.com/cyro55">GitHub</a>
